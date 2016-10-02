@@ -1,0 +1,272 @@
+/*Данная строка подключает ресет сисс которая сбрасывает 
+все настройки к нулю*/
+@import url(reset.css);
+body{
+	font:12px/1.6 Arial, Verdana, Taxoma, suns-serif;
+	color:#5d5d5d;
+	background-color:#f4f4f4;	
+}
+
+/*text-transform указыввет в каком регистре пишутся буквы
+text-transform:uppercase-высший регистре
+               lowercase-низший регистр*/
+
+/*В нашем случаем у заголовков второго и третьего уровня есть общие элементы
+опять воспользуемся обьеденением селекторов и вынесем общие элементы с один блок*/
+
+h2, h3{
+	font-weight:bold;
+	color:#090909;	
+	text-transform:uppercase;
+}
+
+h2{
+	font-size:18px;
+	padding-left:28px;
+	background:url('../images/arrow.png') no-repeat 0 10px;
+	margin-bottom:11px;	
+}
+h3{
+	font-size:12px;
+	background: url(../images/arrow2.png) no-repeat 0 7px;
+	padding-left:22px;
+	margin-bottom:20px;	
+}
+a{
+color:#fe9b00;
+text-decoration:none;
+font-weight:bold;
+text-transform:uppercase;	
+}
+
+.active, a:hover{
+	color:#e62d66;	
+}
+
+p{
+	margin:8px 0;
+}
+
+#topline{
+	background-color:#090909;
+	height:17px;
+}
+
+#wrapper{
+	width:960px;
+	margin:0 auto;	
+}
+
+#headder{
+	padding:20px 0 16px 0;
+	border-bottom:1px solid #c0c0c0;
+	overflow:hidden;	
+}
+
+#logo{
+	width:183px;
+	height:100px;
+	float:left;
+	
+}
+/*Пропишем float:left и float:right для того что бы 
+растянуть наше меню важно помнить что при использовании float
+наши элементы как бы выпадают и что бы этого не произошло
+ важно задавать для родительского элемента свойство overflow:nidden;*/
+#menu{
+	float:right;
+	margin-top:50px;
+}
+
+
+#menu ul li{
+	float:left;	
+	margin-left:63px;
+}
+/*ширину не задаем так как она уже задана в хеддере*/
+#hedderimage{
+	height:380px;
+	background:url('../images/hedder_image.jpg') no-repeat;
+	margin-top:20px;
+	border-bottom:1px solid #c0c0c0;
+    padding-bottom:20px;
+	position:relative;
+}
+/*Помним что при использовании float браузер не видит эти блоки
+и необходимо использовать overflow:hidden*/
+#content{
+	margin-top:21px;
+	border-bottom:1px solid #c0c0c0;
+	overflow:hidden;
+	padding-bottom:27px;
+}
+
+#blackbocx{
+	width:443px;
+	height:44px;
+	background-color:#090909;
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	color:#737272;
+	position:absolute;
+	left:35px;
+	bottom:68px;
+}
+#blackbocx p{
+	margin:15px 12px;
+	line-height:1;
+}
+
+#blackbocx a {
+	float:right;
+}
+
+.blocks{
+	width:283px;
+	float:left;
+	margin-right:53px;	
+}
+
+/*Так как мы задали отступ для всех трех элементов но
+для третьего он нам не нужен мы создаем для него айди и прописываем нулевой отспу справа*/
+
+.blocks h2{
+	border-bottom:5px solid #090909;
+	padding-bottom:3px;
+	margin-bottom:16px;
+}
+
+.blocks ul li{
+	background:url(../images/chek.png) 0 3px no-repeat;
+	padding-left:29px;
+	margin-bottom:12px;
+	line-height:1.2;	
+}
+/*Важно помнить что есть два внешних отступа пересекаются между собой
+то важно понмить что они пересекаются и не суммируются друг с другом*/
+#italic{
+	font-style:italic;
+	color:#090909;
+	margin-top:30px;	
+}
+
+#portfolio{
+	margin-top:20px;
+	overflow:hidden;
+	padding-bottom:33px;
+    border-bottom:1px solid #c0c0c0;
+}
+
+/*Помним что задавать размеры картинок обязательно иначе они занимают 
+всю площадь родительского элемента*/
+.portfolioimage{
+	width:215px;
+	height:135px;
+	float:left;
+	margin-right:33px;
+	position:relative;
+
+}
+/*Так как свойства одинаковые то используем групповой селектор*/
+#blocks, #portfolioimage{
+	margin-right:0;
+}
+
+/*Если ссылка находится внтури картинки и является блочным элементом
+необходимо прописать display:block;*/
+/*Незабывваем убирать межстрочный интервал что бы он не добавлял отступ снизу*/
+.portfolioimage a{
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:#090909;
+	display:block;
+	background:#fe9b00;
+	padding:4px 10px;
+	line-height:1;
+}
+
+.portfolioimage a:hover{
+	color:#ee1941;	
+}
+
+/*Если используем прозрачный слой при сохранении иконок то выбираем PNG-24*/
+
+#bottom_row{
+	margin-top:25px;
+	overflow:hidden;
+}
+
+#blog{
+	width:660px;
+	float:left;	
+	margin-right:80px;
+}
+
+#social{
+	width:220px;
+	float:left;
+}
+
+#social ul li{
+	float:left;
+	margin-right:12px;	
+}
+
+#foter{
+	background:#e2e2e2;
+	padding:32px 0 35px 0;	
+	margin-top:33px;
+}
+
+#fotercontent{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+#fotercontent a:hover{
+	color:#050000;	
+}
+
+/*capitalize означает написание букв с загланой и дальше с маленькой*/
+#fotercontent a{
+	color:#5d5d5d;
+	font-weight:normal;
+	text-transform:capitalize;	
+}
+
+/*Так как для нашего бордера учитывается еще и межстрочный интервал 
+пропишем свойство line-height*/
+#fotercontent ul li{
+	float:left;
+	padding:0 7px 0 7px;
+	border-left:1px solid #888888;
+	line-height:1;
+}
+
+/*Второй способ как убрать отступ первого элемента это прописать ему
+псевдокласс который будет задан только для первого элемента*/
+#fotercontent ul li:first-child{
+	padding-left:0;
+	border-left:none;	
+}
+
+#fotercontent p{
+	margin:3px 0 0 0;	
+}
+
+#logofooter{
+	width:119px;
+	height:64px;
+	background: url(../images/logotip.png) no-repeat ;
+	position:absolute;
+	top:-12px;
+	right:0;
+}
+
+/*Свойство clear чистит все что будет идти после него*/
+.clear{
+	clear:both;	
+}
