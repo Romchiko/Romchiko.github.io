@@ -29,6 +29,17 @@ b{
 	box-shadow: 9px 12px 18px -10px rgba(0,0,0,0.75);
 }
 
+@media handheld and (min-width: 600px) {
+	#main{
+	max-width: 100%;
+	min-width: 320px;
+	margin: 0;
+	}
+}
+
+
+
+
 #header{
 	width: 100%;
 	overflow: hidden;
