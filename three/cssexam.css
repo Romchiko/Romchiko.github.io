@@ -45,11 +45,23 @@ b{
 	overflow: hidden;
 	padding-top: 30px;
 }
+@media handheld and (min-width: 600px) {
+		#header{
+		width: 100%;
+	}
+}
+
 	#header1{
 		width: 157px;
 		margin-left: 2.1%;
 		float: left;
 	}
+	@media handheld and (min-width: 600px) {
+			#header1{
+			width: 100%;
+		}
+	}
+
 
 	#header1 h1{
 		font-family: 'Oleo Script', cursive;
@@ -69,6 +81,14 @@ b{
 		width: 60%;
 		margin-right: 1.2%;
 	}
+	@media handheld and (min-width: 600px) {
+			#header2{
+			width: 100%;
+			margin: 0 auto;
+			color: black;
+		}
+	}
+	
 
 		#header2-1{
 			overflow: hidden;
@@ -95,6 +115,20 @@ b{
 				border-radius: 5px;
 				background-color: orange;
 			}
+			@media handheld and (min-width: 600px) {
+					#header2 > ul li, #header2 ul li:last-child{
+					margin-right: 0;
+					width: 100%;
+					display: block;
+					margin: 0;
+					text-align: center;
+					padding: 10px 0;
+					margin-top: 5px;
+					border-radius: 5px;
+					border: 1px solid #D2BDBD;
+				}
+			}
+			
 
 			#header2-1 a:hover{
 				text-shadow: 1px 2px 1px black, 0 0 1em red;
